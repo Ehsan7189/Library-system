@@ -1,0 +1,17 @@
+{
+    "name": "project/ehsan",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Project\\Ehsan\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ehsan sayyadi",
+            "email": "ehsansayadi7189@gamil.com"
+        }
+    ],
+    "require": {}
+}
