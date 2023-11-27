@@ -12,21 +12,23 @@ class AddClass
     public  string $authorName;
     public  string $pagesCount;
     public  string $publishDate;
+    public $book;
+
     /**
      * @var stdClass
      */
     public stdClass $new_book;
 
-    public function adding(array$book)
+    public function adding(bool $remote)
     {
-
-        $this->new_book->ISBN = $this->ISBN;
-        $this->new_book->bookTitle = $this->bookTitle;
-        $this->new_book->authorName = $this->authorName;
-        $this->new_book->pagesCount = $this->pagesCount;
-        $this->new_book->publishDate = $this->publishDate;
-        $book[] = $this->new_book;
-
+        if ($remote === true) {
+            $this->new_book->ISBN = $this->ISBN;
+            $this->new_book->bookTitle = $this->bookTitle;
+            $this->new_book->authorName = $this->authorName;
+            $this->new_book->pagesCount = $this->pagesCount;
+            $this->new_book->publishDate = $this->publishDate;
+            $array[] = $this->new_book;
+        }
     }
 
 
